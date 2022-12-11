@@ -1,0 +1,128 @@
+{
+	"id": "8653d3d2-8070-4c6b-b7b1-2b45387c7eac",
+	"name": "RestfulBooker API",
+	"timestamp": "2022-12-11T00:40:52.718Z",
+	"collection_id": "0-1cd7fd3e-6114-4b07-af48-14c63b67358e",
+	"folder_id": 0,
+	"environment_id": "8cb249cb-56cc-4109-a600-1bf622b1909d",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "891bd73a-a0e7-4aad-b47d-ab3703a37c2f",
+			"name": "Login",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 1031,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1031
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a9ca9a68-7b4b-4a4f-88e5-5469e9ebefbc",
+			"name": "CreateBooking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 348,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				348
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "242dae4f-7317-47cb-8a91-504dac4a30d4",
+			"name": "GetBooking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 395,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				395
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0acdc4f5-24d5-43f1-bd5d-42998f2aea3a",
+			"name": "UpdateBooking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 304,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				304
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "252efb4b-d808-4d18-a638-e2a82e504c2d",
+			"name": "Delete Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 351,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				351
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2429,
+	"collection": {
+		"requests": [
+			{
+				"id": "891bd73a-a0e7-4aad-b47d-ab3703a37c2f",
+				"method": "POST"
+			},
+			{
+				"id": "a9ca9a68-7b4b-4a4f-88e5-5469e9ebefbc",
+				"method": "POST"
+			},
+			{
+				"id": "242dae4f-7317-47cb-8a91-504dac4a30d4",
+				"method": "GET"
+			},
+			{
+				"id": "0acdc4f5-24d5-43f1-bd5d-42998f2aea3a",
+				"method": "PUT"
+			},
+			{
+				"id": "252efb4b-d808-4d18-a638-e2a82e504c2d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
